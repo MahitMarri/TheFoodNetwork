@@ -145,9 +145,9 @@ p {
   background-image: linear-gradient(to bottom right,red, blue);
   z-index: 4;
   display: inline-block;
-  margin-left:50px;
-  margin-right:50px;
-  white-space: nowrap;
+  vertical-align: middle;
+  margin:50px;
+  border-radius: 10px;
   transition: transform 0.2s ease;
 }
 
