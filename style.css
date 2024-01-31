@@ -146,6 +146,7 @@ p {
   z-index: 4;
   display: inline-block;
   margin:50px;
+  white-space: nowrap;
   transition: transform 0.2s ease;
 }
 
