@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The food newtork</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+      
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+      
+              if (targetElement) {
+                  const offset = 10000;
+                  const targetPosition = targetElement.offsetTop - offset;
+      
+                  window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth',
+                  });
+              }
+          });
+      });
+  </script>
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li><a class="sections" href="#section1">About Us</a></li>
+      <li><a class="sections" href="#section2">Meetings</a></li>
+      <li><a class="sections" href="#section3">Events</a></li>
+      
+    </ul>
+  </header>
+  <main>
+    <div id="i">
+      <div class="welcome">
+        <h1><strong>The Food Network</strong></h1>
+      <div id="joinbox">
+        <a id = "joinlink" target = "_blank" href= "https://docs.google.com/forms/d/e/1FAIpQLSeWhsRTYvrXXZxlU183lI8zaow5LuHeoMIorR5HU6zug236yg/viewform">JOIN NOW!</a>
+      </div>
+      </div>
+    </div>
+    <div class = "areas">
+      <div class="question">
+        <section id = "section1">
+          <h2>About Us</h2>
+          <div id="about_elements">
+            <p class="about_us"> <span class="Name">The Food Network</span>, established in August 2023 at Mountain House High School, has a clear and impactful mission. We are dedicated to addressing the pressing issue of food waste while simultaneously helping the homeless community.
+
+Our approach involves collaborating with local retailers to rescue surplus food items that would otherwise go to waste due to reasons like slow sales or minor imperfections. By doing so, we not only reduce food wastage but also minimize its environmental impact.
+
+Once we've collected this surplus food, our team meticulously sorts and prepares it, following strict hygiene standards to ensure safety. We then organize regular food distribution events at shelters and community centers, ensuring that rescued food reaches those who need it most.
+
+Our mission goes beyond providing nourishment. We aim to create a warm and welcoming community through our events, offering not only food but also a sense of belonging and support.
+
+As we continue to grow, we seek partnerships with local organizations, volunteers, and sponsors who share our vision of a world where no one goes hungry, and excess food finds a meaningful purpose. Together, we aspire to make a lasting difference in the lives of those in need while contributing to a more sustainable and compassionate society.</p>
+            <img src="foodwebsiteimg1.png">
+          </div>
+        </section>
+      </div>
+      
+      <div class="question">
+        <section id = "section2">
+          <h2>Club Meetings</h2> 
+          <h3 class="when">When</h3>
+          <h4 class="when">Every two weeks on Wednesday during lunch</h4>
+          <br>
+          <br>
+          <h3 class="when">Where</h3>
+          <h4 class="when">The WOW room</h4>
+        </section>
+      </div>
+      <div class="question">
+        <section id = "section3">
+          <h2>Events</h2>
+          <div class="event_columns">
+              <div class="row1">
+                <div class= "boxes"><h3>Event 1</h3><h4>Time</h4><h4>Place</h4></div>
+                <div class= "boxes"><h3>Event 2</h3><h4>Time</h4><h4>Place</div>
+                <div class= "boxes"><h3>Event 3</h3><h4>Time</h4><h4>Place</div>
+              </div>
+              <div class="row">
+                <div class= "boxes"><h3>Event 4</h3><h4>Time</h4><h4>Place</div>
+                <div class= "boxes"><h3>Event 5</h3><h4>Time</h4><h4>Place</div>
+                <div class= "boxes"><h3>Event 6</h3><h4>Time</h4><h4>Place</div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </areas>
+    </div>
+  </main>
+  <footer>
+    <div class = "Foot">
+      <p class = "foot-text"><span class="name-foot">The Food Network</span> Et. 2023</p>
+    </div>
+  </footer>
+
+</body>
+</html>
